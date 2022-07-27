@@ -10,8 +10,9 @@ const {
 const { protect } = require('../middleware/authMiddleware')
 
 router.route('/').get(protect, getGoals)
-
 router.route('/').post(protect, setGoal)
+
+
 
 router.route('/:id').delete(protect, deleteGoal)
 router.route('/:id').put(protect, updateGoal)
