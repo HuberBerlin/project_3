@@ -60,7 +60,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 15px 0;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 23px;
 }
@@ -108,7 +108,8 @@ h3 {
 }
 
 .goal {
-  background-color: #f4f4f4;
+  background-color: #d43806;
+  border-radius: 7px;
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
@@ -120,7 +121,9 @@ h3 {
   right: 15px;
   cursor: pointer;
   border: none;
-  background: none;
+  background: #fff;
+  border-radius: 11px;
+  padding: 0 3px;
 }
 
 .form,
@@ -142,6 +145,7 @@ h3 {
   border-radius: 5px;
   margin-bottom: 10px;
   font-family: inherit;
+  box-shadow: inset 0px 5px 7px #000000a1;
 }
 
 .form-group label {
