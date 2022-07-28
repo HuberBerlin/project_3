@@ -17,7 +17,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-
+a:hover {color: #F90;}
 p {
   line-height: 1.7;
 }
@@ -35,20 +35,21 @@ h2,
 h3 {
   font-weight: 600;
   margin-bottom: 10px;
+  color: #FFF;
+  text-shadow: 3px 4px 5px #000;
 }
 
 
 
 .container {
   margin: 3% auto;
-  max-width: 960px;
-  padding: 29px 74px 71px 74px;
+  max-width: 637px;
+  padding: 9px 55px 32px 55px;
   text-align: center;
   width: 100%;
-  border: 1px solid #000;
-  background: #dddddd;
-
-  border-radius: 55px;
+  border: 1px solid rgb(255, 255, 255);
+  background: #000000b8;
+  border-radius: 29px;
  
 }
 
@@ -61,7 +62,7 @@ h3 {
   align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 60px;
+  margin-bottom: 23px;
 }
 
 .header ul {
@@ -90,12 +91,14 @@ h3 {
 .heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 21px;
   padding: 0 20px;
 }
 
 .heading p {
-  color: #e91e63;;
+  color: #ffb122;
+  font-size: 21px;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .goals {
@@ -145,13 +148,14 @@ h3 {
   text-align: left;
   display: block;
   margin: 0 0 5px 3px;
+  color: #FFF;
 }
 
 .btn {
   padding: 10px 20px;
   border: 1px solid #000;
   border-radius: 5px;
-  background: #000;
+
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -161,7 +165,48 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 3px 5px 2px  #0000008a;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss */
+background: #bfd255; /* Old browsers */
+background: -moz-linear-gradient(top,  #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
 }
+
+.btn:hover{
+  background: #0f0f09; /* Old browsers */
+background: -moz-linear-gradient(top,  #0f0f09 0%, #18560c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #0f0f09 0%,#18560c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #0f0f09 0%,#18560c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f09', endColorstr='#18560c',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+.topBtn{
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px 2px #000000;
+  background: #bfd255; /* Old browsers */
+background: -moz-linear-gradient(top,  #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+
+}
+
+.topBtn:hover{ 
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f0f09+0,18560c+100 */
+background: #0f0f09; /* Old browsers */
+background: -moz-linear-gradient(top,  #0f0f09 0%, #18560c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #0f0f09 0%,#18560c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #0f0f09 0%,#18560c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f09', endColorstr='#18560c',GradientType=0 ); /* IE6-9 */
+
+}
+
 
 .btn svg {
   margin-right: 8px;
@@ -181,36 +226,7 @@ h3 {
   transform: scale(0.98);
 }
 
-.loadingSpinnerContainer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.loadingSpinner {
-  width: 64px;
-  height: 64px;
-  border: 8px solid;
-  border-color: #000 transparent #555 transparent;
-  border-radius: 50%;
-  animation: spin 1.2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 @media (max-width: 600px) {
   .form {

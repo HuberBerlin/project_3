@@ -16,8 +16,8 @@ function Header() {
 
   return (
     <header className='header'>
-      <div className='logo'><img alt='logo' src="https://renehuber.me/logo_test.jpg" height={21} />
-        <Link to='/'>Todo List</Link>
+      <div className='logo'>
+        <Link to='/'><img alt='logo' src="https://renehuber.me/todo_logo.png" height={55} /></Link>
       </div>
       <ul>
         {user ? (
@@ -29,12 +29,12 @@ function Header() {
         ) : (
           <>
             <li>
-              <Link to='/login'>
+              <Link to='/login' className='topBtn'>
                 <FaSignInAlt /> Login
               </Link>
             </li>
             <li>
-              <Link to='/register'>
+              <Link to='/register' className='topBtn'>
                 <FaUserAstronaut /> Register
               </Link>
             </li>
